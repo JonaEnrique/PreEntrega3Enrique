@@ -10,8 +10,7 @@ const pintarProductos = (productos) => {
                           <a class="btn-floating halfway-fab wabes-effect waves-light red"><i id=${producto.id} class="material-icons agregar">add_shopping_cart</i></a>
                         </div>
                         <div class="card-content">
-                            <p>${producto.desc}</p>
-                            <p>${producto.precio}</p>
+                            <p>$ ${producto.precio}</p>
                         </div>
                       `
       contenedor.appendChild(div);

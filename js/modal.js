@@ -4,20 +4,20 @@ const cerrarCarrito = document.getElementById('btn-cerrar-carrito');
 const modalCarrito = document.querySelector('.modal-carrito');
 
 abrirCarrito.addEventListener('click', () => {
-    modalContenedor.classList.toggle('modal-active')
+    modalContenedor.classList.toggle('modal-active');
 });
 
 cerrarCarrito.addEventListener('click', () => {
-    modalContenedor.classList.toggle('modal-active')
+    modalContenedor.classList.toggle('modal-active');
 });
 
 modalContenedor.addEventListener('click', () => {
-    cerrarCarrito.click()
+    cerrarCarrito.click();
 });
 
 modalCarrito.addEventListener('click', (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     if (e.target.classList.contains('boton-eliminar')) {
-        eliminarProductosCarrito(e.target.value)
+        eliminarProductosCarrito(e.target.value);
     }
 })
